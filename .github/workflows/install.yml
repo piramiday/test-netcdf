@@ -27,8 +27,6 @@ jobs:
 
       - name: Update tools
         run: |
-          pip install -U pip
-          pip install -U pipx
           pipx install ${{ matrix.tool }}
 
       - name: Print versions
