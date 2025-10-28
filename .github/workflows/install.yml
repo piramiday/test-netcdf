@@ -43,7 +43,7 @@ jobs:
 
       - name: Install via poetry
         if: ${{ matrix.tool == 'poetry' }}
-        run: POETRY_INSTALLER_NO_BINARY=netcdf4 poetry install
+        run: POETRY_INSTALLER_NO_BINARY=:all: poetry install
 
       - name: Install via uv
         if: ${{ matrix.tool == 'uv' }}
