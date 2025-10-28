@@ -14,7 +14,7 @@ jobs:
       matrix:
         python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
         tool: [poetry, uv]
-        cdf: ['1.7.1.post2', '1.7.2', '1.7.3']
+        cdf: ['1.7.1.post1', '1.7.1.post2', '1.7.2', '1.7.3']
 
     steps:
       - name: Checkout
